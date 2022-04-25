@@ -13,7 +13,7 @@ export const UseLoginStore = defineStore('loginStore',{
             axios.request( { 
                 url: 'https://reqres.in/api/login',
                 method: 'POST',
-                params : {
+                data : {
                     email : 'eve.holt@reqres.in',
                     password : 'cityslicka'
                 },

@@ -1,25 +1,16 @@
 <template>
     <div>
-        <h1>Welcome to the Login Page</h1>
-        <h3>Email</h3>
-        <input type="text">
-        <h3>Password</h3>
-        <input type="text">
-        <div>
-            <button @click="loginApi">Login</button>
-        </div>
+        <LoginPage/>
     </div>
 </template>
 
 <script>
-import {UseLoginStore} from '@/stores/loginstore'
-import { mapState } from 'pinia'
-    export default {
-        name : 'LoginPage',
-        computed : {
+import LoginPage from '@/components/LoginPage.vue'
 
-            ...mapState(UseLoginStore , ['loginApi'])
-        }
+    export default {
+        components: { LoginPage },
+        name : 'LoginView',
+        
     }
 </script>
 
