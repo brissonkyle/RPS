@@ -4,6 +4,7 @@
       <v-main>
         <nav>|
           <router-link to="/LoginView.vue">Login</router-link> |
+          <router-link to='/@/views/GameView.vue'>Game Page</router-link> |
         </nav>
       <router-view/>
     </v-main>
@@ -13,6 +14,7 @@
 
 <style lang="scss">
 #app {
+  background-color: rgb(244, 90, 8);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,10 +27,10 @@ nav {
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #27ea92;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #27ea92;
     }
   }
 }
